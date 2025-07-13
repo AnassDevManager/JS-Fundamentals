@@ -4,9 +4,9 @@ arg1 = "My number ";
 
 if (arg2 === undefined) {
     console.log("Not a number");
-} else if (arg2 === NaN) {
+} else if (arg2 !== parseInt(arg2)) {
     console.log("Not a number");
-} else {
+} else if (arg2 >== 0  ) {
 
     console.log(`${arg1} is ${arg2}`);
 }
