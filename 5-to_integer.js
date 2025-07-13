@@ -14,14 +14,27 @@ if (isNaN(num)) {
 
 */
 
-const arg = process.argv[2];
+
+
+
+/*const arg = process.argv[2];
 
 
 // Validate integer with optional negative sign
 if (typeof arg === "string" && /^-?\d+$/.test(arg)) {
-    const num = BigInt(arg);
+    const num = BigParseInt(arg);
     console.log("My number is " + num);
 } else {
     console.log("Not a number");
 }
 
+*/
+
+const arg = process.argv[2];
+const num = Number(arg);
+
+if (isNaN(num)) {
+    console.log("Not a number");
+} else {
+    console.log("My number is " + Math.trunc(num));
+}
