@@ -16,9 +16,12 @@ if (isNaN(num)) {
 
 const arg = process.argv[2];
 
-// Check if it's a valid integer string (optional negative sign)
+
+// Validate integer with optional negative sign
 if (typeof arg === "string" && /^-?\d+$/.test(arg)) {
-    console.log("My number is " + BigInt(arg));
+    const num = BigInt(arg);
+    console.log("My number is " + num);
 } else {
     console.log("Not a number");
 }
+
