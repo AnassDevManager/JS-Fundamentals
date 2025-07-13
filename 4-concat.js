@@ -8,10 +8,34 @@ if (C === undefined) {
 }
     */
 
-const args = process.argv[2];
-if (args === undefined) {
+
+
+// const args = process.argv[1];
+// if (args === undefined) {
+//     console.log("undefined is undefined");
+// } else {
+//     console.log(args[0] + " is " + args[1]);
+// }
+
+
+/*
+const arg1 = process.argv[2];
+const arg2 = process.argv[3];
+
+if (arg1 === undefined) {
     console.log("undefined is undefined");
+} else if (arg2 === undefined) {
+    console.log(arg1 + " is undefined");
 } else {
-    console.log(args);
+    console.log(arg1 + " is " + arg2);
 }
+
+
+*/
+
+const arg1 = process.argv[2];
+const arg2 = process.argv[3];
+
+console.log(`${arg1} is ${arg2}`);
+
 
