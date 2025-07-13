@@ -36,5 +36,5 @@ const num = Number(arg);
 if (isNaN(num)) {
     console.log("Not a number");
 } else {
-    console.log("My number : " + Math.trunc(num));
+    console.log("My number is : " + Math.trunc(num));
 }
